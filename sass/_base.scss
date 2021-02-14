@@ -14,8 +14,6 @@ html {
   font-size: 62.5%; // 1rem = 10px, 10/16px = 62.5%
 }
 
-
-
 body {
   font-weight: 400;
   line-height: 1.5;
@@ -30,29 +28,22 @@ body {
   // style for 0 - 768px
 
   @media (min-width: 768px) {
-    width: 75rem;
+    // width: 80rem;
     //style beetwin 768 - 992
-
   }
 
   @media (min-width: 992px) {
-    width: 97rem;
+    width: 100vw;
     //style beetwin 992 - 1200
   }
 
   @media (min-width: 1200px) {
-    width: 117rem;
+    width: 108vw;
     margin-right: auto;
     margin-left: auto;
-    //style for 1200 px and more 
+    //style for 1200 px and more
   }
-
-
 }
-
-
-
-
 
 .u-link,
 .u-link:link,
@@ -64,9 +55,6 @@ body {
     text-decoration: underline;
   }
 }
-
-
-
 
 .list {
   font-size: 1.3rem;
@@ -95,8 +83,6 @@ body {
   }
 }
 
-
-
 .u-link-text {
   display: flex;
   flex-wrap: inherit;
@@ -108,9 +94,6 @@ body {
   margin: 0 0 1rem 0;
   line-height: 1.1;
 }
-
-
-
 
 .instagram {
   height: 2rem;

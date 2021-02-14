@@ -14,21 +14,19 @@
   align-items: center;
   margin-bottom: 6rem;
 
-  @media(max-width:768px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
     padding: 0 1.5rem;
   }
 
-
-
-  &>a {
+  & > a {
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
   }
 
-  @media (max-width:768px) {
-    &>a {
+  @media (max-width: 768px) {
+    & > a {
       flex: 0 1 20%;
     }
   }
@@ -85,7 +83,6 @@
         }
       }
 
-
       &.grey {
         color: lightgrey;
 
@@ -99,7 +96,6 @@
 
         &:hover {
           color: #423b88;
-
         }
       }
 
@@ -130,7 +126,6 @@
     }
 
     .service-number {
-
       font-size: 2rem;
       font-weight: 400;
       color: #666;
@@ -151,8 +146,6 @@
       list-style: none;
       margin-top: 2rem;
       margin-bottom: 2rem;
-
-
 
       & a {
         color: $color-primary;
