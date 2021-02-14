@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10/16px = 62.5%
+}
+
+
+
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-black;
+  font-family: "Lato", sans-serif;
+  padding-top: 10rem;
+}
+
+.u-container {
+  width: 100%;
+  padding: 0 15px;
+  // style for 0 - 768px
+
+  @media (min-width: 768px) {
+    width: 75rem;
+    //style beetwin 768 - 992
+
+  }
+
+  @media (min-width: 992px) {
+    width: 97rem;
+    //style beetwin 992 - 1200
+  }
+
+  @media (min-width: 1200px) {
+    width: 117rem;
+    margin-right: auto;
+    margin-left: auto;
+    //style for 1200 px and more 
+  }
+
+
+}
+
+
+
+
+
+.u-link,
+.u-link:link,
+.u-link:visited {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+
+.list {
+  font-size: 1.3rem;
+  color: $color-black;
+  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .grey-white {
+    background-color: #65cea7;
+    color: white;
+    padding: 0.2em 0.6em 0.3em;
+    border-radius: 0.25em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+
+
+.u-link-text {
+  display: flex;
+  flex-wrap: inherit;
+  color: $color-link;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+}
+
+
+
+
+.instagram {
+  height: 2rem;
+}
+
+.span1 {
+  text-align: center;
+}
+
+.link {
+  &-facebook {
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+    background: orange;
+    // background-image: url(../img/facebook.svg);
+    -webkit-mask: url(../img/facebook.svg) no-repeat center;
+    mask: url(../img/facebook.svg) no-repeat center;
+  }
+
+  &-build {
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+    background: grey;
+    // background-image: url(../img/facebook.svg);
+    -webkit-mask: url(../img/facebook.svg) no-repeat center;
+    mask: url(../img/facebook.svg) no-repeat center;
+
+    // &:hover {
+    //   background-color: red;
+    // }
+  }
+}
+
+.mr2 {
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.mb-60 {
+  margin-bottom: 6rem;
+  margin: 0 15rem;
+  border-color: $color-border;
+}
+
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.mr5 {
+  margin-right: 5px;
+}

@@ -1,0 +1,55 @@
+.social-link {
+    display: flex;
+    justify-content: center;
+    margin: 6rem;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        & i {
+            font-size: 2.4rem;
+            color: grey;
+            opacity: 0.4;
+            transition: all 0.2s;
+            margin: 0 5px;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+
+
+        & .facebook:hover {
+            color: blue;
+        }
+
+        & .instagram:hover {
+            color: pink;
+        }
+
+        & .youtube:hover {
+            color: red;
+        }
+
+        & .linkedin:hover {
+            color: blue;
+        }
+
+        & .pinterest:hover {
+            color: red;
+        }
+
+        & .twitter:hover {
+            color: blue;
+        }
+
+        .mrlogo {
+            height: 4.5rem;
+            width: 6.5rem;
+        }
+    }
+}

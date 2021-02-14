@@ -1,0 +1,124 @@
+//////second part - item 1
+//
+.items {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.item-1 {
+  flex: 2;
+  background-image: url(../img/Web-Copy_720x370.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 15px;
+
+  // @media (min-width: 501px) {
+  //   margin: 0 0;
+  //   max-height: 250px;
+  // }
+
+  &--icon {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+  }
+
+  &--text {
+    width: 80%;
+    margin-top: 25%;
+    margin-left: 20px;
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    // @media (min-width: 501px) {
+    //   font-size: 3.4rem;
+    //   margin-top: -2%;
+    // }
+
+  }
+}
+
+//// item 2
+
+.item-2 {
+  display: none; // need for mobile
+
+  background-color: $color-primary-light;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+
+  &--text {
+    color: white;
+    font-weight: bold;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+  }
+
+  &--social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 1.8rem 1rem;
+
+    background-color: $color-primary-dark;
+
+    &>* {
+      color: white;
+      font-size: 3rem;
+      padding: 0.2rem;
+      margin: 0 5px;
+
+    }
+
+    @media (max-width: 1200px) {
+      width: 80%;
+    }
+
+    @media (max-width: 1060px) {
+      width: 80%;
+    }
+
+    @media (max-width: 768px) {
+      &>* {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+
+  &--link {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    transition: all 0.8s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--linkbig {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+}

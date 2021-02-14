@@ -1,0 +1,188 @@
+.bottom {
+  border-top: 1px solid $color-border;
+  background-color: #f8f8f8;
+  margin-top: 15rem;
+  padding-top: 9rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+
+  @media(max-width:768px) {
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+  }
+
+
+
+  &>a {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  @media (max-width:768px) {
+    &>a {
+      flex: 0 1 20%;
+    }
+  }
+}
+
+.badges-size {
+  height: 5rem;
+  width: auto;
+}
+
+.service {
+  display: flex;
+  padding: 0 6rem;
+  // margin-top: 7rem;
+  margin-bottom: 3.5rem;
+
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 0;
+  }
+
+  &__container {
+    flex: 1;
+    padding: 0 15px;
+
+    @media (max-width: 992px) {
+      flex: 0 1 33%;
+    }
+
+    .service-link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      transition: all 0.2s;
+      color: black;
+
+      &:hover {
+        color: $color-primary-dark-2;
+      }
+
+      & :first-child {
+        margin-right: 0.5rem;
+      }
+
+      &.orange {
+        color: $color-orange;
+
+        &:hover {
+          color: $color-orange-hover;
+        }
+      }
+
+
+      &.grey {
+        color: lightgrey;
+
+        &:hover {
+          color: grey;
+        }
+      }
+
+      &.purple {
+        color: #23527c;
+
+        &:hover {
+          color: #423b88;
+
+        }
+      }
+
+      &.burg {
+        color: #ae2f2d;
+
+        &:hover {
+          color: #23527c;
+        }
+      }
+
+      &.pink {
+        color: #83004a;
+
+        &:hover {
+          color: #a1005b;
+        }
+      }
+
+      &.blue {
+        color: rgb(149, 149, 255);
+        text-decoration: none;
+
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+
+    .service-number {
+
+      font-size: 2rem;
+      font-weight: 400;
+      color: #666;
+      text-decoration: none;
+
+      &:hover {
+        color: #333;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.7rem;
+      }
+    }
+
+    .service-list {
+      font-size: 1.3rem;
+      color: $color-black;
+      list-style: none;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+
+
+      & a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-primary-dark-2;
+          text-decoration: underline;
+        }
+      }
+
+      .green-box {
+        background-color: #65cea7;
+        color: white;
+        border-radius: 3px;
+        padding: 2px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 2px;
+      }
+
+      .grey-box {
+        background-color: #d2d2d2;
+        color: white;
+        border-radius: 3px;
+        padding: 2px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 2px;
+      }
+    }
+  }
+}
