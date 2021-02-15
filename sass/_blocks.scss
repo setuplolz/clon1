@@ -13,7 +13,7 @@
 
   background-color: $color-primary-dark;
 
-  & > i {
+  &>i {
     font-size: 3rem;
     padding: 3px 7px;
   }
@@ -21,10 +21,14 @@
   @media (max-width: 768px) {
     width: 97%;
 
-    & > i {
+    &>i {
       font-size: 2.4rem;
       padding: 3px 5px;
     }
+  }
+
+  @media (min-width:768px) {
+    width: 98%;
   }
 }
 
@@ -43,6 +47,7 @@
 
   @media (max-width: 768px) {
     margin: 12px;
+    width: 98%;
   }
 
   &--text-1 {

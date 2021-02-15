@@ -32,14 +32,15 @@ body {
     //style beetwin 768 - 992
   }
 
-  @media (min-width: 992px) {
-    width: 100vw;
-    //style beetwin 992 - 1200
-  }
+  // @media (min-width: 992px) {
+  //   width: 98rem;
+  //   //style beetwin 992 - 1200
+  // }
 
   @media (min-width: 1200px) {
-    width: 108vw;
+    width: 119rem;
     margin-right: auto;
+    padding: 0 1.5rem;
     margin-left: auto;
     //style for 1200 px and more
   }

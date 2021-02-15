@@ -18,7 +18,7 @@
   padding: 0 1rem;
   border-bottom: 1px solid white;
   visibility: hidden;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 #menu__toggle:checked ~ .popup {
   visibility: visible;
@@ -81,6 +81,10 @@
   column-count: 2;
   padding: 14rem;
   height: 44rem; }
+  @media (max-width: 768px) {
+    .menu-left {
+      column-count: unset;
+      height: unset; } }
 
 .none {
   display: flex;
@@ -102,14 +106,19 @@
   .menu-right__top {
     display: flex;
     align-items: center;
-    flex-basis: 40%;
+    flex-basis: 60%;
     background: #989898; }
     .menu-right__top--text {
       font-size: 1.6rem;
       color: white;
-      padding: 4rem; }
+      padding: 4rem;
+      margin-top: 3rem; }
+      @media (max-width: 768px) {
+        .menu-right__top--text {
+          padding: 20px 20px;
+          margin: 0 0; } }
   .menu-right__bottom {
-    flex-basis: 60%;
+    flex-basis: 40%;
     background: #349bd0;
     padding-left: 13%;
     padding-top: 2.5rem;
@@ -174,7 +183,6 @@
 
 .content {
   display: flex;
-  margin-top: 3rem;
   justify-content: center; }
   .content--text {
     font-size: 1.6rem;
@@ -195,7 +203,8 @@
 
 .items {
   display: flex;
-  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
   justify-content: space-between; }
   @media (max-width: 768px) {
     .items {
@@ -286,6 +295,11 @@
     display: none;
     justify-content: center;
     margin-top: 5rem; }
+    @media (max-width: 768px) {
+      .header__navigation {
+        display: none;
+        margin-top: -5rem;
+        margin-bottom: 1rem; } }
     @media (min-width: 768px) {
       .header__navigation {
         display: flex;
@@ -357,6 +371,9 @@ h2 {
   @media (max-width: 992px) {
     .posts {
       justify-content: flex-start; } }
+  @media (max-width: 767px) {
+    .posts {
+      display: block; } }
   @media (max-width: 534px) {
     .posts {
       display: flex; } }
@@ -379,11 +396,14 @@ h2 {
   .post__image {
     width: 100%;
     height: 16rem;
-    border: 1px solid black;
+    border: 1px solid grey;
     border-bottom: none; }
+    @media (max-width: 767px) {
+      .post__image {
+        height: unset; } }
   .post__detail {
     padding: 1.5rem;
-    border: 1px solid black; }
+    border: 1px solid grey; }
 
 .info {
   margin-top: 2.5rem; }
@@ -418,6 +438,9 @@ h2 {
       .block > i {
         font-size: 2.4rem;
         padding: 3px 5px; } }
+  @media (min-width: 768px) {
+    .block {
+      width: 98%; } }
 
 .block-2 {
   display: flex;
@@ -433,7 +456,8 @@ h2 {
   padding: 25px 35px 0; }
   @media (max-width: 768px) {
     .block-2 {
-      margin: 12px; } }
+      margin: 12px;
+      width: 98%; } }
   .block-2--text-1 {
     text-align: center;
     font-size: 4rem;
@@ -502,13 +526,11 @@ body {
 .u-container {
   width: 100%;
   padding: 0 15px; }
-  @media (min-width: 992px) {
-    .u-container {
-      width: 100vw; } }
   @media (min-width: 1200px) {
     .u-container {
-      width: 108vw;
+      width: 119rem;
       margin-right: auto;
+      padding: 0 1.5rem;
       margin-left: auto; } }
 
 .u-link,
@@ -603,14 +625,19 @@ body {
   border-bottom: 1px solid #ddd; }
 
 .badges {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  padding-left: 0; }
   @media (max-width: 768px) {
     .badges {
-      flex-wrap: wrap;
-      padding: 0 1.5rem; } }
+      padding: 0 1rem;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .badges {
+      flex: unset;
+      text-align: center;
+      justify-content: center; } }
   .badges > a:not(:last-child) {
     margin-right: 1.5rem; }
   @media (max-width: 768px) {
@@ -632,7 +659,8 @@ body {
       text-align: center; } }
   @media (max-width: 768px) {
     .service {
-      padding: 0 0; } }
+      display: unset;
+      text-align: unset; } }
   .service__container {
     flex: 1;
     padding: 0 15px; }
@@ -689,6 +717,12 @@ body {
       list-style: none;
       margin-top: 2rem;
       margin-bottom: 2rem; }
+      @media (max-width: 768px) {
+        .service__container .service-list > li {
+          font-size: 1.6rem;
+          background: white;
+          padding: 8px 10px;
+          margin-bottom: 5px; } }
       .service__container .service-list a {
         color: #428bca;
         text-decoration: none; }
